@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .relative {
+            position: relative;
+            top: 20px;
+            left: 30px;
+            background: lightgreen;
+            padding: 20px;
+        }
+
+        .parent-relative {
+            position: relative;
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: orange;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="position: static; background-color: lightblue; padding: 0cap;">
+        Static Position
+    </div>
+
+    <!-- RELATIVE -->
+     <div class="relative">
+        Relative Position
+     </div>
+
+     <!-- ABSOLUTE -->
+      <div class="parent-relative">
+        Prent (Relative)
+        <div class="absolute">
+            Absolute Child
+        </div>
+      </div>
+</body>
+
+</html>
